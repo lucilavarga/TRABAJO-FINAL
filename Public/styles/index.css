@@ -1,0 +1,191 @@
+/*se prueba la conexion entre CSS y HTML probando con el color de fondo de la pagina web/
+/css significa cascading style sheets es decir hojas de estilo en cascada/
+/* la razon por la que es importante conocer por que es en cascada ya que aqui importa el orden en el que se escriben las cosas*/
+/*el orden debe ser: 1. importaciones/
+    /2. Estructuramos variables en CSS como paleta de colores, o nombres de las tipografias/
+    /3. condiciones iniciales color, dimensiones para quitar scroll se debe ajustar ancho width 100% de la pantalla o 100vw que ocupe el ancho de la pantalla del dispositivo/
+    /la propiedad Overflow-x es para que haga scroll unicamente arriba y abajo y esconda (hidden)el contenido que se sale de la dimension/
+    /El selector universal ojo{ me aplica todos los estilos a todos los elementos de mi HTML (quita margenes)->margin 0 y padding 0*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    color: rgb(188, 220, 241);
+    background-color: rgb(4, 123, 128);
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+            /* Tipo de letra */
+}
+
+/* Estilos para la encabezado */
+header {
+    background-color: #c3f787;
+    /* Color de fondo */
+    padding: 30px;
+    /* Espaciado interno */
+    display: flex;
+    /* Mostrar elementos en línea */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Alinear elementos verticalmente */
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.miListaNAvegacion{
+    width: 100%;
+    background-color: #c3f787;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+.menuNavegacion {
+    display: flex;
+    /* Mostrar elementos en línea */
+    align-items: center;
+    /* Alinear elementos verticalmente */
+    font-family: Arial, sans-serif;
+            /* Tipo de letra */
+}
+
+.menuNavegacion .navegacion {
+    list-style-type: none;
+    /* Eliminar viñetas */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menuNavegacion .navegacion li a {
+    text-decoration: none;
+    /* Eliminar subrayado de enlaces */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilos para el banner */
+.banner {
+    text-align: center;
+    /* Alinear texto al centro */
+}
+
+/* Estilos para la sección de información */
+.informacion1,
+.informacion2 {
+    margin-bottom: 30px;
+    /* Espacio inferior */
+}
+
+.titulo {
+    color: yellow;
+    /* Color del texto */
+    text-align: center;
+    /* Alinear texto al centro */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+}
+
+.contenedorInformacion {
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+
+.audiovisual {
+    max-width: 100%;
+    /* Ancho máximo de la imagen */
+    height: auto;
+    /* Altura automática */
+    display: block;
+    /* Para que se pueda centrar con margin: 0 auto; */
+    margin: 0 auto 20px;
+    /* Centrar horizontalmente y agregar espacio inferior */
+}
+
+/* Estilos para el pie de página */
+footer {
+    color: #333;
+    /* Color de fondo del */
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alinear texto al centro */
+    background-color: #c3f787;
+}
+
+.redeSociales {
+    list-style-type: none;
+    /* Eliminar viñetas */
+    padding: 0;
+    color: #3e0146;
+    /* Color del texto */
+}
+
+.redeSociales li {
+    display: inline-block;
+    /* Mostrar elementos en línea */
+    margin-right: 10px;
+    /* Espacio entre elementos */
+    color: #3e0146;
+    /* Color del texto */
+}
+
+.redeSociales li a {
+    text-decoration: none;
+    /* Eliminar subrayado de enlaces */
+    color: #3e0146;
+    /* Color del texto */
+}
+
+.informacion1 p {
+    text-align: justify;
+    /* Alinear texto justificado */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+    max-width: 800px;
+    /* Ancho máximo del párrafo */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+/*implementación del responsive*/
+        @media screen and (max-width: 780px) {
+   main{
+    margin: 20px;
+   }
+    header {
+    /* Reducir el espaciado*/
+    padding: 20px;
+    }
+     .menuNavegacion .navegacion li {
+    margin-right: 10px; /* hace pequeño el espacio entre los elementos del menú */
+    }
+    .titulo {
+    /*reduce el tamaño de texto*/
+    font-size: 24px; 
+    }
+         
+    .contenedorInformacion {
+    /* Reduce espacios del contenedor de info*/
+    padding: 10px; 
+     }
+          
+    .audiovisual {
+    /* Reduce el espacio inferior*/
+    margin-bottom: 10px;         
+     }
+          
+    footer {
+    /*REduce espacios del pie de pagina*/
+    padding: 15px; 
+            }
+          }
+          @media  screen and(min-width:Opx) and(max-width:400px)
+            

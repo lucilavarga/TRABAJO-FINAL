@@ -1,0 +1,194 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*no entiendo porque las reglas del body no me aplican*/
+body {
+  color: rgb(4, 49, 78);
+  background-color: rgb(4, 123, 128);
+  width: 100%;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  /* Tipo de letra */
+  margin: 100px;
+}
+
+header {
+   background-color: #9887f7; 
+  /* Color de fondo */
+}
+
+/*del bootstrap de la barra de navegación traigo el logo quewidth y modifico el tamaño a  modifico en mi httml y le doy .logo y {etiqueta */
+.logo {
+  width: 80px;
+}
+
+.miListaNAvegacion {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  /* Tipo de letra */
+}
+/* Estilos para el título del titulo aqui ajusto el tamaño del texto y espacio inferior */
+.contenedorInformacion h1 {
+  font-size: 40px;
+  /* Tamaño*/
+  font-family: Arial, sans-serif;
+   /* Tipo de letra */
+  margin-bottom: 30px;
+  /* Espacio*/
+}
+main {
+  background-color: rgb(4, 123, 128);
+  padding: 100px;
+  color: aliceblue;
+}
+/* En el párrafo ajusto el color y el tamaño del texto asi como la altura y el tipo de letra */
+.contenedorInformacion p {
+  /* Color */
+   background-color: rgb(4, 123, 128);
+  font-size: 25px;
+  /* Tamaño*/
+  font-family: Arial, sans-serif;
+   /* Tipo de letra */
+  line-height: 1.5;
+  /* Altura de línea */
+}
+.logoFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+/* En el footer, ajusto el parafo justificando, cambiando tipo de letra, tamaño de fuente y el color */
+.logoFooter p {
+  width: 60%;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+   /* Tipo de letra */
+  font-size: 25px;
+  color: rgb(222, 231, 231);
+}
+
+/* ahora estilo la imagen del footer*/
+.logoFooter img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+label{
+  font-size: 30px;
+}
+/* Estilos para el pie de página */
+footer {
+  color: #333;
+  /* Color de fondo del texto */
+  padding: 20px;
+  /* Espaciado interno */
+  text-align: center;
+  /* Alinear texto al centro */
+  background-color: #c3f787;
+  display: flex;
+  flex-direction: column;
+}
+
+.redeSociales {
+  list-style-type: none;
+  /* Eliminar viñetas */
+  padding: 0;
+  color: #3e0146;
+  /* Color del texto */
+}
+
+.redeSociales li {
+  display: inline-block;
+  /* Mostrar elementos en línea */
+  margin-right: 10px;
+  /* Espacio entre elementos */
+  color: #3e0146;
+  /* Color del texto */
+}
+
+.redeSociales li a {
+  text-decoration: none;
+  /* Eliminar subrayado de enlaces */
+  color: #3e0146;
+  /* Color del texto */
+}
+
+.informacion1 p {
+  text-align: justify;
+  /* Alinear texto justificado */
+  font-family: Arial, sans-serif;
+  /* Tipo de letra */
+  max-width: 800px;
+  /* Ancho máximo del párrafo */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+}
+/*implementación del responsive*/
+@media screen and (max-width: 400px) {
+  .contenedor{
+   width: 100%;
+  }
+  nav {
+    width: 100%;
+    background-color: aquamarine;
+  }
+  nav ul{
+    padding-top: 10 px;
+  }
+  main{
+    padding: 50px;
+  }
+  .contenerdorInformacion h1{
+    font-size: 30 px;
+  }
+  .contenerdorInformacion p {
+    font-size: 20 px;
+
+  }
+  .logoFooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .logoFooter img,
+  .logoFooter p {
+    width: 100%;
+  }
+}
+ @media screen and (min-width: 700px) {
+  .contenedor{
+   width: 100%;
+  }
+  nav {
+    width: 100%;
+    height: 280px;
+    background-color: aquamarine;
+  }
+  nav ul{
+    padding-top: 10 px;
+  }
+  .contenerdorInformacion h1{
+    font-size: 35 px;
+  }
+  .contenerdorInformacion p {
+    font-size: 25 px;
+  } 
+}
+@media  screen and(min-width:Opx) and(max-width:400px) 
+{ nav ul{
+  padding-top: 10 px;
+}
+.contenerdorInformacion h1{
+  font-size: 35 px;
+}
+.contenerdorInformacion p {
+  font-size: 25 px;
+} }
