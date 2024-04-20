@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    color: rgb(1, 8, 12);
+    background-color: rgb(4, 123, 128);
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 100vh;
+
+            /* Tipo de letra */
+}
