@@ -2,7 +2,7 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-
+import conexionMongo from "./src/config/baseDatos.js";
 
 
 //2.CONFIGURAR NUESTRO SERVIDOR
@@ -11,14 +11,27 @@ const puerto = 6000;
 
 //2.1 confirar las variables de entorno
 dotenv.config();
+conexionMongo();
 
-
+//2.2 Configurar las variables de entorno
+dotenv.config();
 
 //3.ESTABLECER LA CONEXION CON NUESTRO FRONT
+const rutaPublica = path.join(process.cwd(), "Public");
+app.use(express.static(rutaPublica));
+app.use(express.json());
+
+
+
+//Especificamos que vamos a acceder a nuestroindex.html
+app.get("/",(req,res) => {
+    res.sendFile(path.join(rutaPublica,"index.html"))
+});
 
 
 //4.INICIALIZAMOS EL SERVIDOR
 
 app.listen(puerto, () => {
-    console.log(`El servidor esta escuchando en http//localhost:${puerto}`);
+    console.log(`El servidor está escuchando en http://localhost:${puerto}`); 
 });
+
