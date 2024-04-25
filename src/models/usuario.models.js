@@ -15,7 +15,7 @@ const usuariosSchema = new schema({
     type:String,
     required: true
 },
-Contrasena:{
+contrasena:{
     type:String,
     required:true
 }
