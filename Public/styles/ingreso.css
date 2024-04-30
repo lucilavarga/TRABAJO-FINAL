@@ -1,20 +1,153 @@
-*{
+
+* {
     margin: 0%;
     padding: 0%;
 }
 
 body {
-    color: rgb(1, 8, 12);
-    background-color: rgb(72, 222, 235);
+    color: rgb(26, 27, 25);
+    background-color: rgb(2, 100, 104);
     width: 100%;
     overflow-x: hidden;
     font-size: 25px;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    height: 100vh;
-
-            /* Tipo de letra */
+    /* Tipo de letra */
+ 
 }
 
+/* Estilos para la encabezado */
+header {
+    background-color: #02607c;
+    /* Color de fondo */
+    padding: 30px;
+    /* Espaciado interno */
+    display: flex;
+    /* Mostrar elementos en línea */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Alinear elementos verticalmente */
+}
+
+.menuNavegacion {
+    display: flex;
+    /* Mostrar elementos en línea */
+    align-items: center;
+    /* Alinear elementos verticalmente */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+ 
+}
+
+.menuNavegacion .navegacion {
+    list-style-type: none;
+    /* Eliminar viñetas */
+    margin: 0;
+    padding: 0;
+}
+
+.menuNavegacion .navegacion li {
+    display: inline-block;
+    /* Mostrar elementos en línea */
+    margin-right: 20px;
+    /* Espacio entre elementos */
+}
+
+.menuNavegacion .navegacion li a {
+    text-decoration: none;
+    /* Eliminar subrayado de enlaces */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilos para el banner */
+.banner {
+    text-align: center;
+    /* Alinear texto al centro */
+}
+
+/* Estilos para la sección de información */
+.informacion1,
+.informacion2 {
+    margin-bottom: 30px;
+    /* Espacio inferior */
+}
+
+
+.contenedorInformacion {
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+
+.audiovisual {
+    max-width: 100%;
+    /* Ancho máximo de la imagen */
+    height: auto;
+    /* Altura automática */
+    display: block;
+    /* Para que se pueda centrar con margin: 0 auto; */
+    margin: 0 auto 20px;
+    /* Centrar horizontalmente y agregar espacio inferior */
+}
+
+/* Estilos para el pie de página */
+footer {
+    color: #f7f0f0;
+    /* Color de fondo del */
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alinear texto al centro */
+    background-color: #043e42;
+}
+
+.informacion1 p {
+    text-align: justify;
+    /* Alinear texto justificado */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+    max-width: 800px;
+    /* Ancho máximo del párrafo */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+/*implementación del responsive*/
+@media screen and (max-width: 780px) {
+body {
+/* Reduce el tamaño del texto*/
+font-size: 15px;
+/* Reducir el margen */
+margin: 20px; 
+}    
+header {
+/* Reducir el espaciado*/
+padding: 20px;
+}
+.menuNavegacion .navegacion li {
+margin-right: 10px; /* hace pequeño el espacio entre los elementos del menú */
+}
+.titulo {
+/*reduce el tamaño de texto*/
+font-size: 24px; 
+}
+ 
+.contenedorInformacion {
+/* Reduce espacios del contenedor de info*/
+padding: 10px; 
+}
+  
+.audiovisual {
+/* Reduce el espacio inferior*/
+margin-bottom: 10px;         
+}
+  
+footer {
+/*REduce espacios del pie de pagina*/
+padding: 15px; 
+    }
+    .footer-text {
+        color: white;
+    }
+  }

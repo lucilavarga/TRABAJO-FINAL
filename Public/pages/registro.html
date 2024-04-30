@@ -13,7 +13,10 @@
         {background-color: rgb(70, 212, 164)}
             </style>
 
-    
+   
+
+<!--link de mi archivo javascript-->
+<script src="./scripts/registro.js" defer></script>
 </head>
 
 <body class=" body">
@@ -23,22 +26,22 @@
                 <h2>Formulario de Registro</h2>
                 <div class="mb-3">
                     <label for="Nombre-ompleto" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="Nombre-ompleto"
-                        placeholder="Ingresa tu Nombre Completo">
+                    <input type="text" class="form-control" 
+                        placeholder="Ingresa tu Nombre Completo" id="nombreCompleto"/>
                 </div>
 
                 <div class="mb-3">
                     <label for="Correo" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="Correo" placeholder="Ingresa tu Correo">
+                    <input type="email" class="form-control"  placeholder="Ingresa tu Correo" id="correo"/>
                 </div>
 
                 <div class="mb-3">
                     <label for="Contrasena" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="Contrasena" placeholder="Ingresa tu Contrasena">
+                    <input type="password" class="form-control" placeholder="Ingresa tu Contrasena" id="Contrasena"/>
                 </div>
 
                 <div class="mb-3">
-                    <button type="button" class="btn btn-info">Registrarse</button>
+                    <button type="button" class="btn btn-info" onclick="registrarUsuario()">Registrarse</button>
 
                 </div>
             </div>

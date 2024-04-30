@@ -10,57 +10,99 @@
 
     <title>Ingreso</title>
 
-    <style>.body 
-        {background-color: rgb(70, 212, 164)}
-            </style>
+    <script src="./scripts/ingreso.js"></script>
+
 </head>
 
 <body class=" body">
-    <div class="container col-xxl-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 bg-light p-2 mt-3 rounded">
-        <div class="row">
-            <div class="col-12">
-                <h2>Formulario de Ingreso</h2>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Madres Síndrome de Down</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html"
+                      >Principal</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=vJPhufFC5yA">Para reflexionar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registro.html">registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ingreso.html">Ingreso</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-bag"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
-                <div class="mb-3">
-                    <label for="Correo" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="Correo" placeholder="Ingresa tu Correo">
-                </div>
-
-                <div class="mb-3">
-                    <label for="Contrasena" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="Contrasena" placeholder="Ingresa tu Contrasena">
-                </div>
-
-                <div class="mb-3">
-                    <button type="button" class="btn btn-info">Ingresar</button>
-
+    <main>
+        <div class="container col-xl-4 col-md-6 bg-light p-2 mt-3 rounded border border-black">
+            <div class="row border-dark">
+                <div class="col-12 border-dark">
+                    <h3>Formulario de Ingreso</h3>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control"
+                        placeholder="Ingrese su correo" id="correo"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="contrasena"/>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary mb-3" onclick="iniciarSesion()" >Ingresar</button>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+    </main>
+
+    <footer>
+              <!-- Copyright -->
+      <div
+      class="text-center p-3"
+      style="background-color: rgba(247, 241, 241, 0.05)"
+    >
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/"
+        >Lucila Vargas Garay</a
+      >
     </div>
-
-    <!-- USTEDES ME VAN A HACER ESTA PAGINA SEGUN SU SITIO WEB-->
-
-    <!--DEBE TENER:
-
-        
-        UN formulario de ingreso
-         
-         -preguntar al usuario su correo electronico
-         -preguntar al usuario su contraseña
-        
-        UN BOTON DE Ingresar
-    
-    -->
+    </footer>
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+                
+
+   
