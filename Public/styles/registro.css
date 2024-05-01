@@ -1,19 +1,97 @@
-*{
-    margin: 0%;
-    padding: 0%;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(4, 123, 128);
 }
 
-body {
-    color: rgb(1, 8, 12);
-    background-color: rgb(4, 123, 128);
-    width: 100%;
-    overflow-x: hidden;
-    font-size: 25px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    height: 100vh;
+/* Estilos para el formulario dentro de contenedorOk */
 
-            /* Tipo de letra */
+.logo {
+    width: 15%; /* La imagen ocupará el 15% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.contenedorOk {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedorOk h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contenedorOk .form-label {
+    font-weight: bold;
+}
+
+.contenedorOk .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contenedorOk .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contenedorOk .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contenedorOk .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedorOk .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el menú de navegación */
+.menuNavegacion {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.menuNavegacion .navegacion {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menuNavegacion .logo {
+    margin-right: 20px;
+}
+.menuNavegacion .navegacion li {
+    display: inline-block;
+    margin-right: 20px;             
+}
+
+.menuNavegacion .navegacion li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #fdfbfb;
 }

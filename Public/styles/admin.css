@@ -1,0 +1,74 @@
+body {
+    background-color: #03364b; 
+    color: white; 
+  }
+
+  .menuNavegacion {
+    display: flex;
+    /* Mostrar elementos en línea */
+    align-items: center;
+    /* Alinear elementos verticalmente */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+ 
+}
+
+.menuNavegacion .navegacion {
+    list-style-type: none;
+    /* Eliminar viñetas */
+    margin: 0;
+    padding: 0;
+}
+
+.menuNavegacion .navegacion li {
+    display: inline-block;
+    /* Mostrar elementos en línea */
+    margin-right: 20px;
+    /* Espacio entre elementos */
+}
+
+.menuNavegacion .navegacion li a {
+    text-decoration: none;
+    /* Eliminar subrayado de enlaces */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilos para el banner */
+.banner {
+    text-align: center;
+    /* Alinear texto al centro */
+}
+
+/* Estilos para la sección de información */
+.informacion1,
+.informacion2 {
+    margin-bottom: 30px;
+    /* Espacio inferior */
+}
+
+
+.contenedorInformacion {
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+
+.audiovisual {
+    max-width: 100%;
+    /* Ancho máximo de la imagen */
+    height: auto;
+    /* Altura automática */
+    display: block;
+    /* Para que se pueda centrar con margin: 0 auto; */
+    margin: 0 auto 20px;
+    /* Centrar horizontalmente y agregar espacio inferior */
+}
+
+
+  
+  footer {
+    background-color: #035274; /* Fondo azul para el footer */
+    color: white; /* Texto blanco */
+  }
