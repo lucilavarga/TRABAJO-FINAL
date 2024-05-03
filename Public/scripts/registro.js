@@ -1,4 +1,4 @@
-const { application, json } = require("express");
+
 
 // 1. verificar conexion con thml
 console.log("holaaa soy registro");
@@ -37,12 +37,12 @@ try{
     }
 );
 const nuevoUsuario = await respuesta.json();
-console.log("Usuario creado exitosamente",nuevoUsuario);
+console.log ("Usuario creado exitosamente",nuevoUsuario);
 
 //condicional para redireccionara ingreso.html
 if(nuevoUsuario){
     alert("Registro exitoso");
-    window.location.href = "./pages/ingreso.html"
+    window.location.href = "./ingreso.html"
 } else{
     alert("Ups! error de registro, intentelo nuevamente");
 }

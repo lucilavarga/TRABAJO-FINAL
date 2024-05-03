@@ -6,7 +6,7 @@ const iniciarSesion = async () =>{
 
     //1.Obtener los valores ingresados por el usuario
     const correo = document.getElementById("correo").value;
-const contrasena = document.getElementById("contrasea").value;
+const contrasena = document.getElementById("contrasena").value;
 
 console.log(correo, contrasena);
 
@@ -20,7 +20,7 @@ console.log(usuarios);
 
 //Verificar si se encontro un usuario con el correo y la contraseña dados
 
-const esUsuarioRegistrado = usuarios.find(usuario. correo == correo && usuario,contrasena == contrasena);
+const esUsuarioRegistrado = usuarios.find(usuario=>usuario.correo == correo && usuario.contrasena == contrasena);
 
 if(esUsuarioRegistrado){
 
@@ -29,11 +29,11 @@ if(esUsuarioRegistrado){
 
     if (esUsuarioRegistrado.correo == correoAdmin){
         alert("Hola administrador");
-        window.location.href ="./page/admin.html"  
+        window.location.href ="./admin.html"  
     } else{
         alert("Ingreso exitoso");
-        window.location.href = "./index.html"
-    }
+        window.location.href = "http://localhost:9000/index.html"
+    }   
 
 }else{
     alert("Correo o contrasea incorrectos. Usuario no encontrado! vuelve a intentar o registrate");
